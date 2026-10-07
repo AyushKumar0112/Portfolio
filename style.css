@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+}
+header {
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  font-size: 1.5rem;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  color: white;
+  font-weight: bold;
+}
+.red_name {
+  color: #dc143c;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin: 2% auto;
+  padding: 10px 7%;
+  box-sizing: border-box;
+  width: fit-content;
+  gap: 15%;
+  border: 1px solid #dc143c;
+  border-radius: 50px;
+}
+.name1,
+.name2,
+.name3,
+.name4 {
+  color: white;
+}
+.name1:hover,
+.name2:hover,
+.name3:hover,
+.name4:hover {
+  color: #dc143c;
+  text-decoration: underline;
+}
+.social_icons {
+  color: white;
+  font-size: 1.5rem;
+  margin: 2.5% 5%;
+  letter-spacing: 3px;
+}
