@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  color: white;
 }
 header {
   display: flex;
@@ -46,4 +47,125 @@ header {
   font-size: 1.5rem;
   margin: 2.5% 5%;
   letter-spacing: 3px;
+}
+.hero {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+#intro {
+  font-weight: bold;
+  font-size: 3rem;
+}
+#work {
+  color: #dc143c;
+  font-size: 2.5rem;
+}
+.others {
+  display: flex;
+  flex-direction: row;
+}
+#hire_me {
+  border: 1px solid #dc143c;
+  border-radius: 40px;
+  margin: 0 5%;
+  padding: 10px;
+  background-color: #dc143c;
+}
+#hire_me:hover {
+  background-color: transparent;
+}
+#contact_me {
+  border: 1px solid #dc143c;
+  border-radius: 40px;
+  margin: 0 5%;
+  padding: 10px;
+}
+#contact_me:hover {
+  background-color: #dc143c;
+}
+.avatar {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.avatar_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes floatIcon {
+  0%,
+  100% {
+    transform: translate(var(--tx, 0px), var(--ty, 0px));
+  }
+  50% {
+    transform: translate(var(--tx, 0px), calc(var(--ty, 0px) - 8px));
+  }
+}
+.skill {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dc143c;
+  border-radius: 50%;
+}
+.top-left {
+  animation: floatIcon 3s ease-in-out infinite;
+  top: -60px;
+  left: -60px;
+}
+.top-center {
+  animation: floatIcon 3s ease-in-out infinite;
+  top: -60px;
+  left: 50%;
+  --tx: -50%;
+}
+.top-right {
+  animation: floatIcon 3s ease-in-out infinite;
+  top: -60px;
+  right: -60px;
+}
+.right-center {
+  animation: floatIcon 3s ease-in-out infinite;
+  top: 50%;
+  right: -60px;
+  --ty: -50%;
+}
+.bottom-right {
+  animation: floatIcon 3s ease-in-out infinite;
+  bottom: -60px;
+  right: -60px;
+}
+.bottom-center {
+  animation: floatIcon 3s ease-in-out infinite;
+  bottom: -60px;
+  left: 50%;
+  --tx: -50%;
+}
+.bottom-left {
+  animation: floatIcon 3s ease-in-out infinite;
+  bottom: -60px;
+  left: -60px;
+}
+.left-center {
+  animation: floatIcon 3s ease-in-out infinite;
+  top: 50%;
+  left: -60px;
+  --ty: -50%;
 }
