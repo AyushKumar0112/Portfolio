@@ -73,6 +73,7 @@ header {
 #hire_me {
   border: 1px solid #dc143c;
   border-radius: 40px;
+  color: white;
   margin: 0 5%;
   padding: 10px;
   background-color: #dc143c;
@@ -83,6 +84,7 @@ header {
 #contact_me {
   border: 1px solid #dc143c;
   border-radius: 40px;
+  color: white;
   margin: 0 5%;
   padding: 10px;
 }
@@ -215,4 +217,65 @@ header {
 }
 h3 {
   color: #dc143c;
+}
+.project_heading {
+  margin-top: 20%;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+.project_heading:hover {
+  text-decoration: underline;
+}
+.Projects {
+  margin: 5% 10%;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+.project1,
+.project2,
+.project3 {
+  border: 1px solid #dc143c;
+  border-radius: 40px;
+  width: 300px;
+  height: 600px;
+  margin: 10% 5%;
+  padding: 0 10px;
+}
+.project1_img,
+.project2_img,
+.project3_img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.project1_heading,
+.project2_heading,
+.project3_heading {
+  font-weight: bold;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3%;
+}
+.skill1,
+.skill2,
+.skill3 {
+  border: 1px solid #dc143c;
+  border-radius: 40px;
+  padding: 10px 15px;
+  color: white;
+}
+.demo {
+  border: 1px solid #dc143c;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  background-color: #dc143c;
 }
